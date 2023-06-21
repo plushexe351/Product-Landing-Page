@@ -45,7 +45,7 @@ min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;   
+    overflow-y: hidden;
     border-bottom:1px solid rgba(0, 0, 0, 0.098);
     z-index: 10;
 }
@@ -60,14 +60,14 @@ min-height: 100vh;
     flex: 1;
 }
 #brand-name h1{
-    padding-left: 4vw;
+    padding: 10px 0 10px 4vw;
     font-size: 2.3rem;
 }
 #navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-left:1px solid rgba(39, 25, 19, 0.226); */
+    border-left:1px solid rgba(39, 25, 19, 0.226);
 }
 a{
     text-decoration: none;
@@ -83,6 +83,8 @@ a{
     text-align: center;
     text-transform: uppercase;
     transition:0.2s;
+    background-color:rgb(241, 239, 233);
+
 }
 .nav-link{
     position: relative;
@@ -109,7 +111,6 @@ a{
 }
 #btn--Shop-Now{
     background-color: purple;
-    /* background-color: rgb(24, 48, 65); */
     color: white;
     min-width:150px;
     font-family: steelr;
@@ -128,8 +129,8 @@ a{
     height:10px;
     z-index: 10;
 }
-#navbar.active{
-    width:100%;
+#header-content.active > #navbar{
+    display: flex;
 }
 .bar{
     height:3px;
@@ -226,7 +227,6 @@ outline-offset: -5px;
 }
 .btn2{
     flex:1;
-    /* background-color: rgb(24, 48, 65); */
     background-color: purple;
     color: white;
 }
@@ -243,6 +243,23 @@ outline-offset: -5px;
 @media (max-width:1100px){
     #navbar{
        display: none;
+       flex-direction: column;
+       justify-content: flex-start;
+    min-width:100%;
+    height: 0%;
+
+    }
+    .nav-link::before{
+        display: none;
+    }
+    #header-content{
+        overflow-y: visible;
+        flex-wrap: wrap;
+    }
+    #header-content .nav-link, #btn--Shop-Now{
+        padding:10px;
+        width: 100%;
+        border-bottom:1px solid rgb(184, 177, 184);
     }
     #hamburger{
         display: block;
