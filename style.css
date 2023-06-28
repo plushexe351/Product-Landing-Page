@@ -221,6 +221,12 @@ main section#home > div{
     cursor: pointer;
 
 }
+
+.btn1{
+    flex:1.4;
+    border-radius: none;
+}
+
 .btn1:hover{
 background-color:rgb(184, 177, 184) ;
 
@@ -245,9 +251,7 @@ outline-offset: -5px;
 ::placeholder{
     color:  rgb(187, 179, 187);
 }
-.btn1{
-    flex:1.4;
-}
+
 .btn2{
     background-color: purple;
     color: white;
