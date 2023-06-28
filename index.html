@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header id="main-header">
+    <header id="header">
         
         <div id="sale-div">10% OFF ON ALL PREPAID ORDERS | USE COUPON CODE "PREPAID 10"</div>
         <div id="header-content">
@@ -24,34 +24,47 @@
             <div id="brand-name">
         <h1>NSF<span class="colored-text">WARDROBE</span></h1>
         </div>
-        <nav id="navbar">
-            <a class="nav-link" href="">About</a>
-            <a class="nav-link" href="">Categories</a>
-            <a class="nav-link" href="">New</a>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#category">Categories</a>
+            <a class="nav-link" href="#new">New</a>
             <div id="btn--Shop-Now"><i class="fa-regular fa-user"></i>Log in</div>
         </nav>
     </div>
-    
     </header>
     <main>
-        <section>
+        <section id="home">
             <div class="hero">
                 <header>
                     <h1>DRESS BETTER EASIER</h1>
                 </header>
+                <form action="https://www.freecodecamp.com/email-submit">
                 <input type="email" id="email" placeholder="Enter your email">
-                <div class="btn btn1">get started<i class="fa-regular fa-arrow-right-long"></i></div>
+                <input type="submit" value="Get Started" class="btn btn1">
                 <div class="btn btn2"><i class="fa-regular fa-cart-shopping"></i>shop now</div>
+            </form>
             </div>
             <div class="aside">
                 <div id="img-div">
-                    <img id="main-image" src="main-image.jpeg" alt="">
+                    <img id="main-image" src="images/main-image.jpeg" alt="">
                 </div>
-                
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section id="category">
+          <figure>
+            <a href=""><div id="men"></div></a>
+            <figcaption>Men</figcaption>
+          </figure>
+            <figure>
+            <a href=""><div id="women"></div></a>
+                <figcaption>Women</figcaption>
+            </figure>
+        </section>
+        <section id="new">
+            <video controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+        </section>
         <script src="index.js"></script>
     </main>
 </body>
