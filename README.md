@@ -1,6 +1,8 @@
 # Product-Landing-Page
+
 A concept product Landing page made with HTML and CSS.
 
+NOTE : This is still a work in progress... I plan to add more Sections.
 
 # Preview
 
