@@ -220,7 +220,7 @@ main section#home {
 }
 
 main section#home>div {
-    flex: 1;
+    width: 50%;
     height: calc(100vh - 60px);
 
 }
@@ -440,6 +440,8 @@ figcaption {
 
 section#new {
     background-color: black;
+    color: rgba(255, 255, 255, 0.207);
+    font-size: 5rem;
     display: grid;
     place-items: center;
 }
