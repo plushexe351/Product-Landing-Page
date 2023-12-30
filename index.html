@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/527f71ab58.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>NSFWARDROBE</title>
   </head>
   <body>
@@ -31,20 +31,25 @@
           <div class="bar short"></div>
         </div>
         <div id="brand-name">
+          <img
+            id="header-img"
+            src="https://cdn-icons-png.flaticon.com/512/25/25770.png"
+            alt=""
+          />
           <h1>NSF<span class="colored-text">WARDROBE</span></h1>
         </div>
         <nav id="nav-bar">
-          <div class="nav-link searchbox">
+          <div class="searchbox">
             <i class="fa-regular fa-magnifying-glass"></i>
             <input type="name" class="search" placeholder="Search Products" />
           </div>
           <a class="nav-link" href="#new"
             ><i class="fa-regular fa-user"></i>Sign in</a
           >
-          <a class="nav-link" href="#new"
+          <a class="nav-link" href="#new1"
             ><i class="fa-regular fa-heart"></i>Favorites</a
           >
-          <a class="nav-link" href="#new"
+          <a class="nav-link" href="#new2"
             ><i class="fa-regular fa-bag-shopping"></i>Shopping bag</a
           >
         </nav>
@@ -102,13 +107,29 @@
               <h3>Trusty Satin</h3>
               <p>From formal to Y2k. Your go-to styles gathered</p>
             </div>
-            <img id="main-image" src="images/main-image.jpeg" alt="" />
+            <img
+              id="main-image"
+              src="https://i.pinimg.com/564x/fe/70/8a/fe708a4ea99d3fb6ec6674a943bf3d9f.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
       <section id="new">
-        <p>Under Development :&#41</p>
+        <video
+          autoplay
+          muted
+          loop
+          src="movie.mp4"
+          type="video/mp4"
+          class="background"
+        ></video>
+        <div class="typography">
+          <p>NSFW</p>
+          <p class="filled-text">NSFW</p>
+          <p>NSFW</p>
+        </div>
         <!-- <video
           autoplay
           muted
@@ -118,7 +139,28 @@
           id="video"
         ></video> -->
       </section>
-      <script src="index.js"></script>
+      <section id="new1">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            type="email"
+          />
+          <input id="submit" type="submit" value="Get Started" />
+        </form>
+      </section>
+      <footer>
+        &copy; Created by
+        <a href="https://github.com/plushexe351">Ushnish Tapaswi</a>
+      </footer>
+      <script>
+        const hamburger = document.getElementById("hamburger");
+        const header = document.getElementById("header-content");
+        hamburger.addEventListener("click", () => {
+          header.classList.toggle("active");
+        });
+      </script>
     </main>
   </body>
 </html>
